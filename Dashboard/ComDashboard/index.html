@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page.:</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <link rel="stylesheet" href="dashboard.css">
+
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <!-- <div class="sidebar close"> -->
+        <div class="logo-detalis">
+            <!-- <i class='bx bxl-c-plus-plus'></i> -->
+            <i class='bx bxl-python' ></i>
+            <span class="logo_name">HomeLogo</span>
+        </div>
+        <ul class="nav-links">
+            <li id="toggleButton">
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Category</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">PHP & MySql</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name">Posts</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Posts</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Card Design</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name">Analytics</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Chart</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Chart</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-plug'></i>
+                        <span class="link_name">Plugins</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Plugins</a></li>
+                    <li><a href="#">UI Face</a></li>
+                    <li><a href="#">Pigments</a></li>
+                    <li><a href="#">Box Icons</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-compass'></i>
+                    <span class="link_name">Explore</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Explore</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name">History</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Setting</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Setting</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="profile-details">
+
+                    <div class="profile-content">
+                        <img src="./image/User.png" alt="Profile">
+                    </div>
+                    <!-- <li>        -->
+                    <div class="name-job">
+                        <div class="profile_name">Deepak Kumar</div>
+                        <div class="job">web Designer</div>
+
+                    </div>
+                    <i class='logout bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <!-- <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Dashboard</span>
+            <div class="search-container"><i class='bx bx-search'></i>
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+    </section> -->
+    <section class="home-section">
+        <div class="home-content">
+            <div style="display: flex;">
+                <i class='bx bx-menu'></i>
+                <span class="text">Dashboard</span>
+            </div>
+            <div class="search-container">
+                <i class='search-icon bx bx-search'></i>
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+
+        <!-- Start Main Overview Section  -->
+        <div class="main-overview">
+            <div class="header-overview">
+                <div><i class='bx bx-grid-alt overview-grid'></i>Overview</div>
+                <div>
+                    <input type="date">
+                </div>
+            </div>
+            <!-- All Overview Cart Section Start   -->
+            <div class="chart-overview">
+                <!--Start Dashboard cart 1 -->
+                <div class="Overview-cart">
+                    <div class="space-btw">
+                        <div>
+                            <p>Turnover</p>
+                        </div>
+                        <div><i class='bx bx-cart'></i></div>
+                    </div>
+                    <h5 style="font-size: 20px;font-weight: 400;">$92,405</h5>
+                    <div class="chart">
+                        <div class="bar" style="height: 80%;">50</div>
+                        <div class="bar" style="height: 60%;">30</div>
+                        <div class="bar" style="height: 40%;">20</div>
+                        <div class="bar" style="height: 70%;">45</div>
+                    </div>
+                    <span class="caet-price"><i class="bi bi-caret-up-fill">5.38%</i><span>&nbsp; Period of
+                            change</span></span>
+                </div>
+                <!-- Dashboard cart 2 End-->
+                <!--Start Dashboard cart 2 -->
+                <div class="Overview-cart">
+                    <div class="space-btw">
+                        <div>
+                            <p>Turnover</p>
+                        </div>
+                        <div><i class='bx bx-cart'></i></div>
+                    </div>
+                    <h5 style="font-size: 20px;font-weight: 400;">$92,405</h5>
+                    <div class="chart">
+                        <div class="bar" style="height: 80%;">50</div>
+                        <div class="bar" style="height: 60%;">30</div>
+                        <div class="bar" style="height: 40%;">20</div>
+                        <div class="bar" style="height: 70%;">45</div>
+                    </div>
+                    <span><i class="bi bi-caret-up-fill">5.38%</i><span>&nbsp; Period of change</span></span>
+                </div>
+                <!-- Dashboard cart 2 End -->
+                <!--Start Dashboard cart 3 -->
+                <div class="Overview-cart">
+                    <div class="space-btw">
+                        <div>
+                            <p>Turnover</p>
+                        </div>
+                        <div><i class='bx bx-cart'></i></div>
+                    </div>
+                    <h5 style="font-size: 20px;font-weight: 400;">$92,405</h5>
+                    <div class="chart">
+                        <div class="bar" style="height: 80%;">50</div>
+                        <div class="bar" style="height: 60%;">30</div>
+                        <div class="bar" style="height: 40%;">20</div>
+                        <div class="bar" style="height: 70%;">45</div>
+                    </div>
+                    <span><i class="bi bi-caret-up-fill">5.38%</i> <span>&nbsp; Period of change</span></span>
+                </div>
+                <!-- Dashboard cart 3 End -->
+            </div>
+            <!--End Dashboard Cart Section -->
+        </div>
+        <!-- All Overview Cart Section Start   -->
+
+        </div>
+        <!-- End Main Overview Section  -->
+
+
+        <!-- Start Main Report Section  -->
+        <div class="main-overview">
+            <div class="header-overview">
+                <div style="display: flex;"><i class='bx bx-spreadsheet overview-grid'></i>Detailed Report</div>
+                <div class="export-with-filter">
+                    <span><i class='bx bx-filter-alt'></i></span>
+                    <span><i class='bx bx-arrow-from-bottom'></i>Export</span>
+                    <!-- <select name="export" id="" class="export">
+                        <option disabled value="volvo">Export</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select> -->
+                </div>
+            </div>
+
+
+            <!-- All Report Data Section Start   -->
+            <div class="chart-overview detail-reports">
+                <table>
+                    <thead class="th-head">
+                        <tr>
+                            <th class="checkbox-column">
+                                <input type="checkbox" id="selectAllCheckbox">
+                            </th>
+                            <th>Items</th>
+                            <th>Values ($)</th>
+                            <th>Delivered To</th>
+                            <th>Date</th>
+                            <th class="status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 1</td>
+                            <td>$100</td>
+                            <td>Address 1</td>
+                            <td>2023-11-03</td>
+                            <td class="status"><span>New</span><span><i class='bx bx-dots-vertical'></i></span> </td>
+                            <!-- <td>New <i class='bx bx-dots-vertical'></i></td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>In progress</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>In progress</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Cancelled</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Cancelled <i class='bx bx-dots-vertical'></i></td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <tr>
+                            <td class="checkbox-column"><input type="checkbox"></td>
+                            <td>Item 2</td>
+                            <td>$75</td>
+                            <td>Address 2</td>
+                            <td>2023-11-04</td>
+                            <td class="status"><span>Completed</span><span><i class='bx bx-dots-vertical'></i></span>
+                            </td>
+                            <!-- <td>Completed</td> -->
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- All Report Data Section End   -->
+
+
+            <!-- Start pagination   -->
+            <div class="main-pagination">
+                <div>
+                    <p>1-10 of 145</p>
+                </div>
+                <div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <!-- Pagination links will be generated here -->
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- End pagination   -->
+        </div>
+        <!-- End Main Report Section  -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        // console.log(arrow);
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                // console.log(arrowParent);
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+
+
+
+
+        // Get the "Select All" checkbox
+        const selectAllCheckbox = document.getElementById("selectAllCheckbox");
+        // Get all the checkboxes in the table body
+        const checkboxes = document.querySelectorAll("tbody input[type='checkbox']");
+        // Function to handle "Select All" checkbox click
+        selectAllCheckbox.addEventListener("click", () => {
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = selectAllCheckbox.checked;
+            });
+        });
+
+
+
+
+        const paginationContainer = document.querySelector(".pagination");
+        const totalPages = 15; // Change this to the total number of pages
+
+        // Add page number links dynamically
+        for (let i = 1; i <= 4; i++) {
+            // for (let i = 1; i <= totalPages; i++) {
+            const pageItem = document.createElement("li");
+            pageItem.classList.add("page-item");
+            const pageLink = document.createElement("a");
+            pageLink.classList.add("page-link");
+            pageLink.href = "#";
+            pageLink.textContent = i;
+            pageItem.appendChild(pageLink);
+            paginationContainer.insertBefore(pageItem, paginationContainer.lastElementChild);
+        }
+
+
+    </script>
+</body>
+
+</html>

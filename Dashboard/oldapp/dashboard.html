@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="dashboard.css">
+
+
+  <title>Dashboard.:</title>
+</head>
+
+<body>
+  <div class="main-menu">
+    <!-- Start Navbar -->
+    <!-- <div class="navbardiv"></div> -->
+    <div class="Navbardiv">
+      <nav>
+        <!-- <div><h2>Logo</h2></div> -->
+        <div class="container m-2">
+          <a class="navbar-brand fw-bold" href="#">
+            <img src="figma.png" alt="" class="me-2" width="45" height="45">Logo
+          </a>
+        </div>
+
+        <div class="Working-space-dir">
+          <p>Working space</p>
+          <!-- <button id="toggleButton">Toggle Content</button> -->
+          <!-- <div id="contentDiv" style="display: none;">
+              <p>This content is hidden by default.</p>
+          </div> -->
+          <ul>
+            <li id="toggleButton"><a href="#"><i
+                  class="ms-2 bi bi-ui-checks-grid me-2"></i>Dashboard</a></li>
+            <li><a href="#"><i class="ms-2 me-2 bi bi-folder"></i>Projects</a></li>
+            <li><a href="#"><i class=" ms-2 me-2 bi bi-pie-chart"></i>Analytics</a></li>
+            <li><a href="#"><i class="bi bi-chevron-left"></i><i class="bi bi-chevron-right"></i>Integrations</a></li>
+
+          </ul>
+          <hr class="w-75" />
+          <p>Personal</p>
+          <ul>
+            <li><a href="#"><i class="ms-2 me-2 bi bi-microsoft-teams"></i>Teams</a></li>
+            <li><a href="#"><i class="ms-2 me-2 bi bi-chat-square"></i>Messages</a></li>
+            <li><a href="#"><i class="ms-2 me-2 bi bi-bell"></i>Notifications</a></li>
+            <li><a href="#"><i class="ms-2 me-2 bi bi-gear"></i>Setting</a></li>
+          </ul>
+        </div>
+
+        <div style="text-align: center;" class="pt-2 ">
+          <img class="bg-dark user-pic" src="User.png" alt="User pituure not available ">
+          <span style="font-size: 11px; font-weight: bold;">Sergey Goldberg</span>
+          <p style="font-size: 11px;">Company@example.com</p>
+        </div>
+
+      </nav>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Dashboard -->
+    <div id="contentDiv" style="display: none;" class="dashboard">
+      <!--Start Header Dashboard Section -->
+      <div class="main-dashboard">
+        <div>
+          <h1 class="fw-bold">Dashboard</h1>
+        </div>
+        <div>
+          <div class="Search">
+            <label><i class="bi bi-search me-2 ms-3 fa-1.5x"></i></label><input class="search-input" type="search"
+              placeholder="Search" name="search" />
+          </div>
+        </div>
+      </div>
+      <!--End Header Dashboard Section -->
+
+      <!--Start Overview Section -->
+      <div class="main-overview">
+        <div class="main-dashboard me-2">
+          <div>
+            <h5><i class="bi bi-ui-checks-grid me-2"></i>Overview</h5>
+          </div>
+          <div>
+            <input type="date" name="date" /><!-- <label><i class="bi bi-calendar2-event"></i></label> -->
+          </div>
+        </div>
+        <!--Start Dashboard Cart Section -->
+        <div class="main-dashboard main-cart">
+          <!-- Dashboard cart 1 -->
+          <div class="Overview-cart">
+            <div class="main-dashboard">
+              <div>
+                <p>Turnover</p>
+              </div>
+              <div><i class="bi bi-cart2 fa-2x"></i></div>
+            </div>
+            <h2>$92,405</h2>
+            <div class="chart">
+              <div class="bar" style="height: 80%;">50</div>
+              <div class="bar" style="height: 60%;">30</div>
+              <div class="bar" style="height: 40%;">20</div>
+              <div class="bar" style="height: 70%;">45</div>
+
+            </div>
+            <span><i class="bi bi-caret-up-fill"></i> 5.38%<span>&nbsp; Period of change</span></span>
+          </div>
+          <!-- Dashboard cart 2 -->
+          <div class="Overview-cart">
+            <div class="main-dashboard">
+              <div>
+                <p>Turnover</p>
+              </div>
+              <div><i class="bi bi-cart2 fa-2x"></i></div>
+            </div>
+            <h2>$92,405</h2>
+            <div class="chart">
+              <div class="bar" style="height: 80%;">50</div>
+              <div class="bar" style="height: 60%;">30</div>
+              <div class="bar" style="height: 40%;">20</div>
+              <div class="bar" style="height: 70%;">45</div>
+
+            </div>
+            <span><i class="bi bi-caret-up-fill"></i> 5.38%<span>&nbsp; Period of change</span></span>
+          </div>
+          <!-- Dashboard cart 3 -->
+          <div class="Overview-cart">
+            <div class="main-dashboard">
+              <div>
+                <p>Profit</p>
+              </div>
+              <div><i class="bi bi-cart2 fa-2x"></i></div>
+            </div>
+            <h2>$32,218</h2>
+            <div class="chart">
+              <div class="bar" style="height: 80%;">50</div>
+              <div class="bar" style="height: 60%;">30</div>
+              <div class="bar" style="height: 40%;">20</div>
+              <div class="bar" style="height: 70%;">45</div>
+
+            </div>
+            <span><i class="bi bi-caret-up-fill"></i> 5.38%<span>&nbsp; Period of change</span></span>
+          </div>
+          <!-- Dashboard cart 4 -->
+          <div class="Overview-cart">
+            <div class="main-dashboard">
+              <div>
+                <p>New coustomer</p>
+              </div>
+              <div><i class="bi bi-cart2 fa-2x"></i></div>
+            </div>
+            <h2>298</h2>
+            <div class="chart">
+              <div class="bar" style="height: 80%;">50</div>
+              <div class="bar" style="height: 60%;">30</div>
+              <div class="bar" style="height: 40%;">20</div>
+              <div class="bar" style="height: 70%;">45</div>
+
+            </div>
+            <span><i class="bi bi-caret-up-fill"></i> 6.84%<span>&nbsp; Period of change</span></span>
+          </div>
+        </div>
+        <!--End Dashboard Cart Section -->
+
+      </div>
+      <!--End Overview Section -->
+
+      <!-- Start report Sections -->
+      <div class="Main-report-section">
+        <div class="container mt-5 px-2">
+          <div class="main-dashboard mt-2 mb-2">
+            <div>
+              <h5><i class="bi bi-file-earmark-ruled me-2"></i>Detailed report</h5>
+            </div>
+            <div>
+              <label><i class="bi bi-funnel"></i></label>
+              <label><i class="bi bi-arrow-up ms-2"></i></label>
+              <!-- <input type="button" name="export" value="Export" /> -->
+              <select name="export" id="">
+                <option disabled value="volvo">Export</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-responsive table-borderless">
+
+              <thead>
+                <tr class="bg-light">
+                  <th scope="col" width="5%"><input class="form-check-input" type="checkbox"></th>
+                  <th scope="col" width="5%">#</th>
+                  <th scope="col" width="20%">Date</th>
+                  <th scope="col" width="10%">Status</th>
+                  <th scope="col" width="20%">Customer</th>
+                  <th scope="col" width="20%">Purchased</th>
+                  <th scope="col" class="text-end" width="20%"><span>Revenue</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                  <td>12</td>
+                  <td>1 Oct, 21</td>
+                  <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Paid</span></td>
+                  <td><img src="https://i.imgur.com/VKOeFyS.png" width="25"> Althan Travis</td>
+                  <td>Wirecard for figma</td>
+                  <td class="text-end"><span class="fw-bolder">$0.99</span> <i class="fa fa-ellipsis-h  ms-2"></i></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                  <td>14</td>
+                  <td>12 Oct, 21</td>
+                  <td><i class="fa fa-dot-circle-o text-danger"></i><span class="ms-1">Failed</span></td>
+                  <td><img src="https://i.imgur.com/nmnmfGv.png" width="25"> Tomo arvis</td>
+                  <td>Altroz furry</td>
+                  <td class="text-end"><span class="fw-bolder">$0.19</span> <i class="fa fa-ellipsis-h  ms-2"></i></td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                  <td>17</td>
+                  <td>1 Nov, 21</td>
+                  <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Paid</span></td>
+                  <td><img src="https://i.imgur.com/VKOeFyS.png" width="25"> Althan Travis</td>
+                  <td>Apple Macbook air</td>
+                  <td class="text-end"><span class="fw-bolder">$1.99</span> <i class="fa fa-ellipsis-h  ms-2"></i></td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                  <td>90</td>
+                  <td>19 Oct, 21</td>
+                  <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Paid</span></td>
+                  <td><img src="https://i.imgur.com/VKOeFyS.png" width="25"> Travis head</td>
+                  <td>Apple Macbook Pro</td>
+                  <td class="text-end"><span class="fw-bolder">$9.99</span> <i class="fa fa-ellipsis-h  ms-2"></i></td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                  <td>12</td>
+                  <td>1 Oct, 21</td>
+                  <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Paid</span></td>
+                  <td><img src="https://i.imgur.com/nmnmfGv.png" width="25"> Althan Travis</td>
+                  <td>Wirecard for figma</td>
+                  <td class="text-end"><span class="fw-bolder">$0.99</span> <i class="fa fa-ellipsis-h  ms-2"></i></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            <div class="main-dashboard">
+              <div>
+                <p>1-10 of 145</p>
+              </div>
+              <div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- End Dashboard -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

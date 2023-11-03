@@ -1,0 +1,32 @@
+/* Apply some basic styling to the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the search input box */
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: 250px;
+}
+
+/* Style the search button */
+.search-button {
+    background-color: #007bff; /* Blue color, you can change this to your preferred color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
